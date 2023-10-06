@@ -35,13 +35,13 @@ Forked from the Editorjs Embed Tool, and updated to show tool in toolbox and inc
 Get the package
 
 ```shell
-npm i --save @editorjs/embed
+npm i embed-ui
 ```
 
 Include module at your application
 
 ```javascript
-import Embed from "@editorjs/embed";
+import Embed from "embed-ui";
 ```
 
 ## Usage
