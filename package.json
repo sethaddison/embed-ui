@@ -10,7 +10,7 @@
   ],
   "description": "Embed for Editor.js including UI for menus and input prompts",
   "license": "MIT",
-  "repository": "",
+  "repository": "https://github.com/sethaddison/embed-ui",
   "main": "./dist/bundle.js",
   "scripts": {
     "build": "webpack --mode production",
