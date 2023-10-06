@@ -1,5 +1,5 @@
 module.exports = {
-  entry: './src/index.js',
+  entry: "./src/index.js",
   module: {
     rules: [
       {
@@ -7,34 +7,34 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           {
-            loader: 'babel-loader',
+            loader: "babel-loader",
           },
-        ]
+        ],
       },
       {
         test: /\.css$/,
         use: [
-          'style-loader',
-          'css-loader',
+          "style-loader",
+          "css-loader",
           {
-            loader: 'postcss-loader',
+            loader: "postcss-loader",
             options: {
               plugins: [
-                require('postcss-nested-ancestors'),
-                require('postcss-nested')
-              ]
-            }
-          }
-        ]
-      }
-    ]
+                require("postcss-nested-ancestors"),
+                require("postcss-nested"),
+              ],
+            },
+          },
+        ],
+      },
+    ],
   },
   output: {
-    path: __dirname + '/dist',
-    publicPath: '/',
-    filename: 'bundle.js',
-    library: 'Embed',
-    libraryTarget: 'umd',
-    libraryExport: 'default'
-  }
+    path: __dirname + "/dist",
+    publicPath: "/",
+    filename: "bundle.js",
+    library: "Embed",
+    libraryTarget: "umd",
+    libraryExport: "default",
+  },
 };
